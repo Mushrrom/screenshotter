@@ -1,14 +1,17 @@
 {
-  "name": "screenshotter",
-  "version": "1.0.0",
-  "description": "A serverless screenshot api using puppeteer",
-  "dependencies": {
-    "puppeteer": "21.5.2"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "mushrrom",
-  "license": "ISC"
+    "name": "screenshotter",
+    "version": "1.0.0",
+    "description": "A serverless screenshot api using puppeteer",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "mushrrom",
+    "license": "ISC",
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "puppeteer": "^21.5.2"
+    }
 }

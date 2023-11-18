@@ -5,7 +5,6 @@ module.exports = async (req, res) => {
     if (!req.query.url) return res.status(400).send("Please input a url");
     if (!checkUrl(req.query.url)) return res.status(400).send("Please input a valid URL");
     try {
-        res.setHeader("Content-Type", "image/png");
         const screenshotFile = await takeScreenshot(
             req.query.url,
             req.query.width,
