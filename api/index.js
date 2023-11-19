@@ -13,8 +13,9 @@ module.exports = async (req, res) => {
 
         res.status(200).end(screenshotFile);
     } catch (err) {
+        console.error(err);
         return res
             .status(500)
-            .send("It seems there was an error. You may have made an invalid query");
+            .send("It seems there was an error. You may have made an invalid query.");
     }
 };
